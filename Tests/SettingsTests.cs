@@ -24,5 +24,13 @@ namespace Tests
 			var settings = Settings.ParseArguments(new[] { "", "ab" });
 			Assert.AreEqual("*.*", settings.Filter);
 		}
+		[Test]
+		public void a_reaction_is_a_regex_and_a_program_colon_separated()
+		{
+			var settings = Settings.ParseArguments(new[] {"-r", ".*F.*:fail.bat"});
+			Assert.AreEqual("fail.bat", settings.Reactions[0].Program);
+			Assert.AreEqual(".*F.*", settings.Reactions[0].RegEx.ToString());
+
+		}
 	}
 }
