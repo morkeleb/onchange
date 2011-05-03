@@ -1,43 +1,73 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 
 namespace onchange
 {
-	class Program
+	public class Program
 	{
-		private static string _response;
+		private readonly Settings _settings;
+		private readonly FileSystemWatcher _watcher;
 
 		static void Main(string[] args)
 		{
-			var settings = Settings.ParseArguments(args);
-			_response = settings.Action;
+			var program = new Program(args);
+			program.WaitForFinish();
+		}
 
-			var watcher = new FileSystemWatcher(Directory.GetCurrentDirectory())
-			              	{
-			              		IncludeSubdirectories = true, 
-								Filter = settings.Filter
-			              	};
-			watcher.Changed += ExecuteProgram;
-			watcher.EnableRaisingEvents = true;
+		private void WaitForFinish()
+		{
+			_watcher.EnableRaisingEvents = true;
 			Console.WriteLine("Started watcher " + Directory.GetCurrentDirectory());
+			Console.WriteLine("Press return to stop watching for changes.");
 			Console.ReadLine();
 		}
 
-		private static void ExecuteProgram(object sender, FileSystemEventArgs e)
+		protected Program(string[] args)
 		{
-			Console.WriteLine("change: " + e.FullPath);
+			_settings = Settings.ParseArguments(args);
+
+			_watcher = new FileSystemWatcher(Directory.GetCurrentDirectory())
+			           	{
+			           		IncludeSubdirectories = true,
+			           		Filter = _settings.Filter
+			           	};
+			_watcher.Changed += OnChange;
+			
+			
+		}
+
+		private void OnChange(object sender, FileSystemEventArgs e)
+		{
+			ExecuteAction(e.FullPath);
+		}
+
+		public void ExecuteAction(string fullPath)
+		{
+			Console.WriteLine("change: " + fullPath);
+			var text = RunProcess(_settings.Action);
+			foreach (var reaction in _settings.Reactions.Where(reaction => reaction.RegEx.IsMatch(text)))
+			{
+				RunProcess(reaction.Program);
+			}
+		}
+
+		protected virtual string RunProcess(string program)
+		{
 			var p = new Process
-			        	{
-			        		StartInfo =
-			        			{
-			        				FileName = _response, 
-									RedirectStandardOutput = true, 
-									UseShellExecute = false
-			        			}
-			        	};
+			{
+				StartInfo =
+				{
+					FileName = program,
+					RedirectStandardOutput = true,
+					UseShellExecute = false
+				}
+			};
 			p.Start();
-			p.StandardOutput.ReadToEnd();
+			var text = p.StandardOutput.ReadToEnd();
+			return text;
+			
 		}
 	}
 }
