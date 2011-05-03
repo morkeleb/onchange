@@ -3,35 +3,49 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="0" fromTop="0" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="260" fromTop="9" />
-      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="98" fromTop="5" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="650" fromTop="20" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="927" fromTop="29" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:OutputParsingTests.cs" caret="310" fromTop="7" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="583" fromTop="23" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:InMemoryProgram.cs" caret="160" fromTop="5" />
     </RecentFiles>
     <RecentEdits>
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="621" fromTop="14" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="128" fromTop="6" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="902" fromTop="29" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="1073" fromTop="25" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="1073" fromTop="19" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="445" fromTop="14" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="513" fromTop="18" />
       <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="198" fromTop="12" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="398" fromTop="20" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="133" fromTop="7" />
       <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="473" fromTop="9" />
-      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="654" fromTop="15" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="253" fromTop="13" />
       <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="0" fromTop="0" />
       <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="58" fromTop="1" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="586" fromTop="19" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="767" fromTop="25" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="302" fromTop="19" />
       <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="0" fromTop="0" />
-      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="260" fromTop="9" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="833" fromTop="28" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="989" fromTop="30" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="1081" fromTop="33" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="965" fromTop="32" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="267" fromTop="3" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="480" fromTop="12" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Settings.cs" caret="650" fromTop="20" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:SettingsTests.cs" caret="927" fromTop="7" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="1623" fromTop="33" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="1465" fromTop="26" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="1043" fromTop="17" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="914" fromTop="29" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="691" fromTop="24" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="326" fromTop="11" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="554" fromTop="18" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:OutputParsingTests.cs" caret="0" fromTop="0" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="113" fromTop="6" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:OutputParsingTests.cs" caret="214" fromTop="10" />
+      <File id="64505CCE-ED33-4F60-A22E-7DCC9E712BC8/f:Program.cs" caret="1348" fromTop="25" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:OutputParsingTests.cs" caret="321" fromTop="10" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:OutputParsingTests.cs" caret="321" fromTop="23" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:InMemoryProgram.cs" caret="437" fromTop="12" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:OutputParsingTests.cs" caret="219" fromTop="6" />
+      <File id="D121715B-8D19-4F89-9659-2238911D4B0D/f:InMemoryProgram.cs" caret="160" fromTop="5" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -47,38 +61,59 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="watcher" priority="6" />
-      <Item value="new" priority="4" />
+      <Item value="new" priority="12" />
       <Item value="FileSystemWatcher" priority="0" />
-      <Item value="Program`0" priority="0" />
+      <Item value="Program`0" priority="3" />
       <Item value="AppDomain`0" priority="0" />
       <Item value="Directory`0" priority="0" />
       <Item value="System" priority="2" />
       <Item value="IO" priority="0" />
-      <Item value="Console`0" priority="2" />
-      <Item value="p" priority="4" />
+      <Item value="Console`0" priority="3" />
+      <Item value="p" priority="6" />
       <Item value="true" priority="2" />
       <Item value="Process`0" priority="0" />
       <Item value="NotifyFilters`0" priority="0" />
-      <Item value="e" priority="0" />
-      <Item value="args" priority="6" />
+      <Item value="e" priority="1" />
+      <Item value="args" priority="7" />
       <Item value="Length" priority="2" />
       <Item value="_response" priority="0" />
-      <Item value="settings" priority="3" />
-      <Item value="private" priority="0" />
-      <Item value="Settings`0" priority="2" />
-      <Item value="string" priority="2" />
-      <Item value="Reaction" priority="1" />
+      <Item value="settings" priority="4" />
+      <Item value="private" priority="2" />
+      <Item value="Settings`0" priority="3" />
+      <Item value="string" priority="7" />
+      <Item value="Reaction" priority="2" />
       <Item value="using" priority="0" />
-      <Item value="public" priority="3" />
-      <Item value="void" priority="2" />
-      <Item value="var" priority="1" />
-      <Item value="Assert`0" priority="1" />
+      <Item value="public" priority="6" />
+      <Item value="void" priority="4" />
+      <Item value="var" priority="6" />
+      <Item value="Assert`0" priority="2" />
       <Item value="for" priority="0" />
-      <Item value="switch" priority="0" />
-      <Item value="i" priority="1" />
-      <Item value="case" priority="0" />
-      <Item value="break" priority="0" />
+      <Item value="switch" priority="1" />
+      <Item value="i" priority="3" />
+      <Item value="case" priority="3" />
+      <Item value="break" priority="3" />
       <Item value="filter" priority="1" />
+      <Item value="String`0" priority="0" />
+      <Item value="input" priority="1" />
+      <Item value="this" priority="1" />
+      <Item value="Regex" priority="0" />
+      <Item value="Reaction`0" priority="0" />
+      <Item value="reactions" priority="1" />
+      <Item value="Reactions" priority="0" />
+      <Item value="foreach" priority="1" />
+      <Item value="_settings" priority="1" />
+      <Item value="reaction" priority="1" />
+      <Item value="return" priority="3" />
+      <Item value="program" priority="5" />
+      <Item value="ExecuteReaction`0" priority="0" />
+      <Item value="onchange" priority="4" />
+      <Item value="protected" priority="0" />
+      <Item value="override" priority="1" />
+      <Item value="default" priority="0" />
+      <Item value="List`0" priority="0" />
+      <Item value="List&lt;string&gt;" priority="0" />
+      <Item value="_reactions" priority="0" />
+      <Item value="base" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.FileSystemWatcher">
       <Item value="Filter" priority="1" />
@@ -98,7 +133,7 @@
       <Item value="GetCurrentDirectory`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="1" />
+      <Item value="WriteLine`0" priority="2" />
       <Item value="ReadLine`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Diagnostics.Process">
@@ -119,17 +154,45 @@
       <Item value="ReadToEnd`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.FileSystemEventArgs">
-      <Item value="FullPath" priority="0" />
+      <Item value="FullPath" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@onchange.Settings">
-      <Item value="ParseArguments`0" priority="1" />
+      <Item value="ParseArguments`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
-      <Item value="AreEqual`0" priority="1" />
+      <Item value="AreEqual`0" priority="2" />
+      <Item value="Contains`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:onchange.Settings">
       <Item value="Reaction" priority="0" />
       <Item value="Filter" priority="0" />
+      <Item value="Reactions" priority="0" />
+      <Item value="Action" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Split`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:onchange.Reaction">
+      <Item value="Program" priority="1" />
+      <Item value="RegEx" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="0" />
+      <Item value="ToArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Regex">
+      <Item value="Matches`0" priority="0" />
+      <Item value="IsMatch`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:onchange.Program">
+      <Item value="ExecuteAction`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tests.InMemoryProgram">
+      <Item value="Reactions" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

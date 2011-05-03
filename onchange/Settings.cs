@@ -21,6 +21,7 @@ namespace onchange
 						reactions.Add(new Reaction(args[++i]));
 						break;
 				}
+				Console.WriteLine(args[i]);
 			}
 
 			return new Settings
@@ -50,7 +51,7 @@ namespace onchange
 		{
 			var i = input.Split(':');
 			Program = i[1];
-			RegEx = new Regex(i[0]);
+			RegEx = new Regex(i[0], RegexOptions.Multiline );
 		}
 		public String Program { get; private set; }
 
