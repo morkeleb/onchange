@@ -30,9 +30,12 @@ OnChange can also be configured to do reactions based on the output of the actio
 
 
 Currently this is the usage:
-	onchange.exe -f *.doc -r .*Failed.*:uploadfailed.bat upload.bat
+	´onchange.exe -f *.doc -r .*Failed.*:uploadfailed.bat upload.bat´
 
 this will watch the current directory for changes to *.doc files. When they change upload.bat will be executed as the action. If the output for upload.bat contains the word "Failed" the uploadfailed.bat will be fired as reaction.
 
 another example is:
-	onchange -f *.py -r "^FAILED.*$:fail.bat" -r ^OK.*:pass.bat runtests.bat	
+	´onchange -f *.py -r "^FAILED.*$:fail.bat" -r ^OK.*:pass.bat runtests.bat´
+This will run the runtests.bat command when any *.py file is updated.
+It will run the fail.bat command when the tests output contains the word FAILED.
+It will run the pass.bat command when the tests output contains the word OK.
