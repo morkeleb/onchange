@@ -47,6 +47,7 @@ namespace onchange
 		{
 			Console.WriteLine("change: " + fullPath);
 			var text = RunProcess(_settings.Action);
+			Console.WriteLine(text);
 			foreach (var reaction in _settings.Reactions.Where(reaction => reaction.RegEx.IsMatch(text)))
 			{
 				RunProcess(reaction.Program);
@@ -61,11 +62,13 @@ namespace onchange
 				{
 					FileName = program,
 					RedirectStandardOutput = true,
+					RedirectStandardError = true,
 					UseShellExecute = false
 				}
 			};
 			p.Start();
-			var text = p.StandardOutput.ReadToEnd();
+			p.WaitForExit();
+			var text = p.StandardOutput.ReadToEnd() + "\n" + p.StandardError.ReadToEnd();
 			return text;
 			
 		}

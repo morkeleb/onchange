@@ -21,7 +21,6 @@ namespace onchange
 						reactions.Add(new Reaction(args[++i]));
 						break;
 				}
-				Console.WriteLine(args[i]);
 			}
 
 			return new Settings
